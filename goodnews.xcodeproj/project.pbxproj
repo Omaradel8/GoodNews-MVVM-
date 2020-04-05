@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		3BF63721243A765D003984A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF63720243A765D003984A5 /* AppDelegate.swift */; };
 		3BF63723243A765D003984A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF63722243A765D003984A5 /* SceneDelegate.swift */; };
-		3BF63725243A765D003984A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF63724243A765D003984A5 /* ViewController.swift */; };
 		3BF63728243A765D003984A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF63726243A765D003984A5 /* Main.storyboard */; };
 		3BF6372A243A765E003984A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF63729243A765E003984A5 /* Assets.xcassets */; };
 		3BF6372D243A765E003984A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF6372B243A765E003984A5 /* LaunchScreen.storyboard */; };
+		3BF63736243A7731003984A5 /* GoodNewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF63735243A7731003984A5 /* GoodNewsTableViewController.swift */; };
+		3BF63739243A7EE3003984A5 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF63738243A7EE3003984A5 /* Service.swift */; };
+		3BF6373C243A8189003984A5 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6373B243A8189003984A5 /* ArticleModel.swift */; };
+		3BF6373F243A8285003984A5 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6373E243A8285003984A5 /* ArticleViewModel.swift */; };
+		3BF63742243A8473003984A5 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF63741243A8473003984A5 /* ArticleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3BF6371D243A765D003984A5 /* goodnews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goodnews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF63720243A765D003984A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF63722243A765D003984A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3BF63724243A765D003984A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3BF63727243A765D003984A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BF63729243A765E003984A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BF6372C243A765E003984A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BF6372E243A765E003984A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BF63735243A7731003984A5 /* GoodNewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodNewsTableViewController.swift; sourceTree = "<group>"; };
+		3BF63738243A7EE3003984A5 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		3BF6373B243A8189003984A5 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		3BF6373E243A8285003984A5 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		3BF63741243A8473003984A5 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		3BF6371F243A765D003984A5 /* goodnews */ = {
 			isa = PBXGroup;
 			children = (
+				3BF63740243A8464003984A5 /* Cells */,
+				3BF6373D243A8271003984A5 /* ViewModel */,
+				3BF6373A243A8171003984A5 /* Model */,
+				3BF63737243A7ED5003984A5 /* Service */,
+				3BF63734243A7708003984A5 /* Controller */,
 				3BF63720243A765D003984A5 /* AppDelegate.swift */,
 				3BF63722243A765D003984A5 /* SceneDelegate.swift */,
-				3BF63724243A765D003984A5 /* ViewController.swift */,
 				3BF63726243A765D003984A5 /* Main.storyboard */,
 				3BF63729243A765E003984A5 /* Assets.xcassets */,
 				3BF6372B243A765E003984A5 /* LaunchScreen.storyboard */,
 				3BF6372E243A765E003984A5 /* Info.plist */,
 			);
 			path = goodnews;
+			sourceTree = "<group>";
+		};
+		3BF63734243A7708003984A5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3BF63735243A7731003984A5 /* GoodNewsTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3BF63737243A7ED5003984A5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3BF63738243A7EE3003984A5 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3BF6373A243A8171003984A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BF6373B243A8189003984A5 /* ArticleModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BF6373D243A8271003984A5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3BF6373E243A8285003984A5 /* ArticleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3BF63740243A8464003984A5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3BF63741243A8473003984A5 /* ArticleTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BF63725243A765D003984A5 /* ViewController.swift in Sources */,
 				3BF63721243A765D003984A5 /* AppDelegate.swift in Sources */,
+				3BF6373C243A8189003984A5 /* ArticleModel.swift in Sources */,
+				3BF63739243A7EE3003984A5 /* Service.swift in Sources */,
+				3BF6373F243A8285003984A5 /* ArticleViewModel.swift in Sources */,
+				3BF63736243A7731003984A5 /* GoodNewsTableViewController.swift in Sources */,
+				3BF63742243A8473003984A5 /* ArticleTableViewCell.swift in Sources */,
 				3BF63723243A765D003984A5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
